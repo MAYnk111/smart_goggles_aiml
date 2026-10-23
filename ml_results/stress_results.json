@@ -1,0 +1,139 @@
+{
+  "model_name": "Physiological Stress Random Forest Classifier",
+  "validation_strategy": "Subject-Wise Group Train-Test Split (GroupShuffleSplit)",
+  "train_subjects": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10",
+    "S11",
+    "S12",
+    "S13",
+    "S15",
+    "S17",
+    "S18",
+    "f01",
+    "f03",
+    "f05",
+    "f06",
+    "f08",
+    "f10",
+    "f11",
+    "f13",
+    "f15",
+    "f16",
+    "f17",
+    "f18"
+  ],
+  "test_subjects": [
+    "S14",
+    "S16",
+    "f02",
+    "f04",
+    "f07",
+    "f09",
+    "f12"
+  ],
+  "features": [
+    "hr_mean",
+    "hr_std",
+    "hr_min",
+    "hr_max",
+    "hr_range",
+    "hr_median",
+    "temp_mean",
+    "temp_std",
+    "temp_min",
+    "temp_max"
+  ],
+  "classes": [
+    "Low",
+    "Medium",
+    "High"
+  ],
+  "accuracy": 0.4869418702611626,
+  "precision_weighted": 0.4693103737883362,
+  "recall_weighted": 0.4869418702611626,
+  "f1_weighted": 0.4758131486256203,
+  "classification_report": {
+    "High": {
+      "precision": 0.3333333333333333,
+      "recall": 0.08,
+      "f1-score": 0.12903225806451613,
+      "support": 25.0
+    },
+    "Low": {
+      "precision": 0.6081242532855436,
+      "recall": 0.6525641025641026,
+      "f1-score": 0.629560915275201,
+      "support": 780.0
+    },
+    "Medium": {
+      "precision": 0.19476744186046513,
+      "recall": 0.17539267015706805,
+      "f1-score": 0.18457300275482094,
+      "support": 382.0
+    },
+    "accuracy": 0.4869418702611626,
+    "macro avg": {
+      "precision": 0.37874167615978066,
+      "recall": 0.30265225757372355,
+      "f1-score": 0.314388725364846,
+      "support": 1187.0
+    },
+    "weighted avg": {
+      "precision": 0.4693103737883362,
+      "recall": 0.4869418702611626,
+      "f1-score": 0.4758131486256203,
+      "support": 1187.0
+    }
+  },
+  "top_features": [
+    {
+      "Feature": "temp_mean",
+      "Importance": 0.15692955201717396
+    },
+    {
+      "Feature": "temp_max",
+      "Importance": 0.13241997820267631
+    },
+    {
+      "Feature": "temp_min",
+      "Importance": 0.12917229720852283
+    },
+    {
+      "Feature": "hr_max",
+      "Importance": 0.1005759671250812
+    },
+    {
+      "Feature": "temp_std",
+      "Importance": 0.09516702171166948
+    },
+    {
+      "Feature": "hr_min",
+      "Importance": 0.09421909948245477
+    },
+    {
+      "Feature": "hr_median",
+      "Importance": 0.08231504667622715
+    },
+    {
+      "Feature": "hr_mean",
+      "Importance": 0.08210675786567766
+    },
+    {
+      "Feature": "hr_range",
+      "Importance": 0.06593066117499925
+    },
+    {
+      "Feature": "hr_std",
+      "Importance": 0.061163618535517286
+    }
+  ]
+}

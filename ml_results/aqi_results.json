@@ -1,0 +1,132 @@
+{
+  "model_name": "AQI Random Forest Classifier",
+  "dataset": "India Air Quality (city_day.csv)",
+  "features": [
+    "PM2.5",
+    "PM10",
+    "NO",
+    "NO2",
+    "NOx",
+    "NH3",
+    "CO",
+    "SO2",
+    "O3",
+    "Benzene",
+    "Toluene",
+    "Xylene"
+  ],
+  "classes": [
+    "Good",
+    "Moderate",
+    "Poor",
+    "Satisfactory",
+    "Severe",
+    "Very Poor"
+  ],
+  "test_size": 4970,
+  "accuracy": 0.8130784708249497,
+  "precision_weighted": 0.8120513229159361,
+  "recall_weighted": 0.8130784708249497,
+  "f1_weighted": 0.8117417873491565,
+  "classification_report": {
+    "Good": {
+      "precision": 0.7841409691629956,
+      "recall": 0.664179104477612,
+      "f1-score": 0.7191919191919192,
+      "support": 268.0
+    },
+    "Moderate": {
+      "precision": 0.8095493562231759,
+      "recall": 0.8544733861834655,
+      "f1-score": 0.8314049586776859,
+      "support": 1766.0
+    },
+    "Poor": {
+      "precision": 0.7363083164300203,
+      "recall": 0.6528776978417267,
+      "f1-score": 0.6920877025738799,
+      "support": 556.0
+    },
+    "Satisfactory": {
+      "precision": 0.8401442307692307,
+      "recall": 0.8498480243161094,
+      "f1-score": 0.8449682683590208,
+      "support": 1645.0
+    },
+    "Severe": {
+      "precision": 0.8725099601593626,
+      "recall": 0.8171641791044776,
+      "f1-score": 0.8439306358381503,
+      "support": 268.0
+    },
+    "Very Poor": {
+      "precision": 0.7940552016985138,
+      "recall": 0.8008565310492506,
+      "f1-score": 0.7974413646055437,
+      "support": 467.0
+    },
+    "accuracy": 0.8130784708249497,
+    "macro avg": {
+      "precision": 0.8061180057405498,
+      "recall": 0.7732331538287736,
+      "f1-score": 0.7881708082077,
+      "support": 4970.0
+    },
+    "weighted avg": {
+      "precision": 0.8120513229159361,
+      "recall": 0.8130784708249497,
+      "f1-score": 0.8117417873491565,
+      "support": 4970.0
+    }
+  },
+  "top_features": [
+    {
+      "Feature": "PM2.5",
+      "Importance": 0.2671484494260546
+    },
+    {
+      "Feature": "PM10",
+      "Importance": 0.16295333422519054
+    },
+    {
+      "Feature": "CO",
+      "Importance": 0.14113709033429078
+    },
+    {
+      "Feature": "NO",
+      "Importance": 0.06195501862334733
+    },
+    {
+      "Feature": "O3",
+      "Importance": 0.0611007195251964
+    },
+    {
+      "Feature": "SO2",
+      "Importance": 0.054926619655076246
+    },
+    {
+      "Feature": "NOx",
+      "Importance": 0.054522616660783035
+    },
+    {
+      "Feature": "NO2",
+      "Importance": 0.053905400777737235
+    },
+    {
+      "Feature": "Toluene",
+      "Importance": 0.04538850842201661
+    },
+    {
+      "Feature": "NH3",
+      "Importance": 0.040502483428237784
+    },
+    {
+      "Feature": "Benzene",
+      "Importance": 0.0339630360232497
+    },
+    {
+      "Feature": "Xylene",
+      "Importance": 0.022496722898819824
+    }
+  ]
+}

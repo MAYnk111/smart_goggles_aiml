@@ -1,0 +1,6 @@
+Model,Family,Val_Accuracy_%,Val_Macro_F1_%,Test_Accuracy_%,Test_Macro_P_%,Test_Macro_R_%,Test_Macro_F1_%,Test_Weighted_F1_%,Train_Time_s,Inference_Latency_ms,Model_Size_KB
+Extra Trees,Ensemble (Extremely Randomized Trees),79.13,77.65,79.61,76.91,80.08,78.31,79.67,3.68,0.0637,208850.77
+XGBoost,Ensemble (Gradient Boosting),79.88,77.39,79.96,78.9,76.08,77.31,79.79,5.21,0.0193,5733.38
+Random Forest,Ensemble (Bagging),79.9,77.32,80.26,79.77,76.09,77.64,80.03,5.33,0.0245,201572.82
+CatBoost,Ensemble (Gradient Boosting with Oblivious Trees),77.03,75.52,78.51,75.23,81.43,77.53,78.75,17.06,0.0021,4889.52
+TabNet,Deep Learning (Sequential Attention & Sparsemax),77.38,72.8,76.39,77.2,70.83,71.94,75.91,38.79,0.0295,94.61

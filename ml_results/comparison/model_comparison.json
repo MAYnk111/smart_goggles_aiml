@@ -1,0 +1,210 @@
+
+{
+  "dataset": "India Air Quality (city_day.csv)",
+  "samples": 24850,
+  "train_samples": 19880,
+  "test_samples": 4970,
+  "split": "Stratified 80/20 train/test split (random_state=42)",
+  "features": [
+    "PM2.5",
+    "PM10",
+    "NO2",
+    "CO",
+    "SO2",
+    "O3"
+  ],
+  "target": "AQI_Bucket",
+  "classes": [
+    "Good",
+    "Moderate",
+    "Poor",
+    "Satisfactory",
+    "Severe",
+    "Very Poor"
+  ],
+  "logistic_regression": {
+    "accuracy": 0.6969818913480885,
+    "weighted_precision": 0.7370670705883415,
+    "macro_precision": 0.6731162578900022,
+    "weighted_recall": 0.6969818913480885,
+    "macro_recall": 0.7425151263628039,
+    "macro_f1": 0.6863599161037331,
+    "weighted_f1": 0.7064605982692745,
+    "training_time": 0.3456383000011556,
+    "prediction_time": 0.0018740000086836517,
+    "confusion_matrix": [
+      [
+        232,
+        2,
+        1,
+        32,
+        1,
+        0
+      ],
+      [
+        29,
+        1262,
+        209,
+        257,
+        4,
+        5
+      ],
+      [
+        0,
+        86,
+        395,
+        3,
+        3,
+        69
+      ],
+      [
+        405,
+        223,
+        1,
+        1015,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        6,
+        1,
+        219,
+        41
+      ],
+      [
+        0,
+        5,
+        71,
+        0,
+        50,
+        341
+      ]
+    ]
+  },
+  "random_forest": {
+    "accuracy": 0.8024144869215292,
+    "weighted_precision": 0.8009391872275053,
+    "macro_precision": 0.7920022805660475,
+    "weighted_recall": 0.8024144869215292,
+    "macro_recall": 0.7663915446053605,
+    "macro_f1": 0.7780363284011517,
+    "weighted_f1": 0.8010985738531439,
+    "training_time": 8.257549900008598,
+    "prediction_time": 0.13034820000757463,
+    "confusion_matrix": [
+      [
+        167,
+        2,
+        0,
+        99,
+        0,
+        0
+      ],
+      [
+        9,
+        1470,
+        77,
+        205,
+        1,
+        4
+      ],
+      [
+        1,
+        130,
+        366,
+        1,
+        2,
+        56
+      ],
+      [
+        50,
+        208,
+        1,
+        1386,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        3,
+        1,
+        226,
+        37
+      ],
+      [
+        0,
+        7,
+        55,
+        0,
+        32,
+        373
+      ]
+    ]
+  },
+  "xgboost": {
+    "status": "SUCCESS",
+    "failure_reason": null,
+    "accuracy": 0.8,
+    "weighted_precision": 0.7987466465795203,
+    "macro_precision": 0.7906978653222586,
+    "weighted_recall": 0.8,
+    "macro_recall": 0.7661627883049116,
+    "macro_f1": 0.7775487414699341,
+    "weighted_f1": 0.7988979495750943,
+    "training_time": 6.17848440000671,
+    "prediction_time": 0.09402859999681823,
+    "confusion_matrix": [
+      [
+        178,
+        1,
+        1,
+        88,
+        0,
+        0
+      ],
+      [
+        5,
+        1456,
+        74,
+        225,
+        1,
+        5
+      ],
+      [
+        0,
+        136,
+        365,
+        2,
+        2,
+        51
+      ],
+      [
+        51,
+        201,
+        1,
+        1392,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        1,
+        222,
+        41
+      ],
+      [
+        0,
+        6,
+        62,
+        0,
+        36,
+        363
+      ]
+    ]
+  }
+}

@@ -1,0 +1,121 @@
+================================================================================
+DETAILED CLASSIFICATION REPORTS — 5-MODEL AQI EXPERIMENT
+Dataset: India Air Quality (city_day.csv)
+Split: 70% Train, 15% Validation, 15% Test (Stratified)
+================================================================================
+
+--- MODEL: RANDOM FOREST ---
+Architecture/Family: Ensemble (Bagging)
+Hyperparameters: {'n_estimators': 300, 'class_weight': 'balanced', 'random_state': 42}
+Training Time: 5.33s
+Inference Latency: 0.0245 ms/sample
+Model Size: 201572.82 KB
+
+Classification Report on Held-Out Test Set (15%):
+              precision    recall  f1-score   support
+
+        Good       0.78      0.61      0.69       201
+    Moderate       0.81      0.83      0.82      1325
+        Poor       0.74      0.61      0.67       417
+Satisfactory       0.81      0.86      0.83      1234
+      Severe       0.86      0.84      0.85       201
+   Very Poor       0.78      0.81      0.79       350
+
+    accuracy                           0.80      3728
+   macro avg       0.80      0.76      0.78      3728
+weighted avg       0.80      0.80      0.80      3728
+
+--------------------------------------------------------------------------------
+
+--- MODEL: XGBOOST ---
+Architecture/Family: Ensemble (Gradient Boosting)
+Hyperparameters: {'n_estimators': 300, 'max_depth': 6, 'learning_rate': 0.05, 'subsample': 0.8, 'colsample_bytree': 0.8, 'random_state': 42}
+Training Time: 5.21s
+Inference Latency: 0.0193 ms/sample
+Model Size: 5733.38 KB
+
+Classification Report on Held-Out Test Set (15%):
+              precision    recall  f1-score   support
+
+        Good       0.75      0.62      0.68       201
+    Moderate       0.82      0.82      0.82      1325
+        Poor       0.74      0.64      0.68       417
+Satisfactory       0.80      0.86      0.83      1234
+      Severe       0.84      0.83      0.84       201
+   Very Poor       0.78      0.80      0.79       350
+
+    accuracy                           0.80      3728
+   macro avg       0.79      0.76      0.77      3728
+weighted avg       0.80      0.80      0.80      3728
+
+--------------------------------------------------------------------------------
+
+--- MODEL: EXTRA TREES ---
+Architecture/Family: Ensemble (Extremely Randomized Trees)
+Hyperparameters: {'n_estimators': 450, 'max_depth': 20, 'min_samples_split': 8, 'min_samples_leaf': 1, 'max_features': 0.8}
+Training Time: 3.68s
+Inference Latency: 0.0637 ms/sample
+Model Size: 208850.77 KB
+
+Classification Report on Held-Out Test Set (15%):
+              precision    recall  f1-score   support
+
+        Good       0.68      0.83      0.75       201
+    Moderate       0.84      0.78      0.81      1325
+        Poor       0.69      0.73      0.71       417
+Satisfactory       0.81      0.83      0.82      1234
+      Severe       0.81      0.87      0.84       201
+   Very Poor       0.78      0.77      0.78       350
+
+    accuracy                           0.80      3728
+   macro avg       0.77      0.80      0.78      3728
+weighted avg       0.80      0.80      0.80      3728
+
+--------------------------------------------------------------------------------
+
+--- MODEL: CATBOOST ---
+Architecture/Family: Ensemble (Gradient Boosting with Oblivious Trees)
+Hyperparameters: {'depth': 8, 'learning_rate': 0.04222210912154243, 'l2_leaf_reg': 2.636424704863906}
+Training Time: 17.06s
+Inference Latency: 0.0021 ms/sample
+Model Size: 4889.52 KB
+
+Classification Report on Held-Out Test Set (15%):
+              precision    recall  f1-score   support
+
+        Good       0.58      0.91      0.71       201
+    Moderate       0.85      0.75      0.80      1325
+        Poor       0.65      0.77      0.70       417
+Satisfactory       0.82      0.79      0.81      1234
+      Severe       0.81      0.90      0.85       201
+   Very Poor       0.81      0.77      0.79       350
+
+    accuracy                           0.79      3728
+   macro avg       0.75      0.81      0.78      3728
+weighted avg       0.80      0.79      0.79      3728
+
+--------------------------------------------------------------------------------
+
+--- MODEL: TABNET ---
+Architecture/Family: Deep Learning (Sequential Attention & Sparsemax)
+Hyperparameters: {'n_d': 16, 'n_a': 16, 'n_steps': 3, 'gamma': 1.3, 'lambda_sparse': 0.001, 'device_name': 'cpu', 'verbose': 0, 'seed': 42}
+Training Time: 38.79s
+Inference Latency: 0.0295 ms/sample
+Model Size: 94.61 KB
+
+Classification Report on Held-Out Test Set (15%):
+              precision    recall  f1-score   support
+
+        Good       0.90      0.35      0.51       201
+    Moderate       0.80      0.77      0.78      1325
+        Poor       0.65      0.66      0.66       417
+Satisfactory       0.76      0.85      0.80      1234
+      Severe       0.77      0.87      0.81       201
+   Very Poor       0.75      0.75      0.75       350
+
+    accuracy                           0.76      3728
+   macro avg       0.77      0.71      0.72      3728
+weighted avg       0.77      0.76      0.76      3728
+
+--------------------------------------------------------------------------------
+

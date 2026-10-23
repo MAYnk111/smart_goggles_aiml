@@ -1,0 +1,72 @@
+{
+  "dataset_name": "India Air Quality (city_day.csv)",
+  "features": [
+    "PM2.5",
+    "PM10",
+    "NO2",
+    "CO",
+    "SO2",
+    "O3"
+  ],
+  "target": "AQI_Bucket",
+  "classes": [
+    "Good",
+    "Moderate",
+    "Poor",
+    "Satisfactory",
+    "Severe",
+    "Very Poor"
+  ],
+  "class_counts_train": {
+    "Moderate": 6180,
+    "Satisfactory": 5757,
+    "Poor": 1947,
+    "Very Poor": 1636,
+    "Good": 939,
+    "Severe": 936
+  },
+  "class_counts_val": {
+    "Moderate": 1324,
+    "Satisfactory": 1233,
+    "Poor": 417,
+    "Very Poor": 351,
+    "Good": 201,
+    "Severe": 201
+  },
+  "class_counts_test": {
+    "Moderate": 1325,
+    "Satisfactory": 1234,
+    "Poor": 417,
+    "Very Poor": 350,
+    "Good": 201,
+    "Severe": 201
+  },
+  "split_ratios": {
+    "train": 0.7,
+    "validation": 0.15,
+    "test": 0.15
+  },
+  "sample_counts": {
+    "total_usable": 24850,
+    "train": 17395,
+    "validation": 3727,
+    "test": 3728
+  },
+  "random_seed": 42,
+  "environment": {
+    "python_version": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "cpu_count": 4,
+    "cuda_available": false,
+    "packages": {
+      "scikit-learn": "1.7.2",
+      "xgboost": "3.2.0",
+      "catboost": "1.2.10",
+      "torch": "2.10.0+cpu",
+      "pytorch_tabnet": "N/A",
+      "optuna": "5.0.0",
+      "pandas": "2.3.3",
+      "numpy": "2.4.0"
+    }
+  }
+}

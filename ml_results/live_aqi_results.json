@@ -1,0 +1,156 @@
+{
+  "model_name": "Live AQI Random Forest Classifier (Open-Meteo Compatible)",
+  "dataset": "India Air Quality (city_day.csv)",
+  "features": [
+    "PM2.5",
+    "PM10",
+    "NO2",
+    "CO",
+    "SO2",
+    "O3"
+  ],
+  "classes": [
+    "Good",
+    "Moderate",
+    "Poor",
+    "Satisfactory",
+    "Severe",
+    "Very Poor"
+  ],
+  "train_samples": 19880,
+  "test_samples": 4970,
+  "accuracy": 0.8024144869215292,
+  "precision_macro": 0.7920022805660475,
+  "recall_macro": 0.7663915446053605,
+  "macro_f1": 0.7780363284011517,
+  "precision_weighted": 0.8009391872275053,
+  "recall_weighted": 0.8024144869215292,
+  "weighted_f1": 0.8010985738531439,
+  "confusion_matrix": [
+    [
+      167,
+      2,
+      0,
+      99,
+      0,
+      0
+    ],
+    [
+      9,
+      1470,
+      77,
+      205,
+      1,
+      4
+    ],
+    [
+      1,
+      130,
+      366,
+      1,
+      2,
+      56
+    ],
+    [
+      50,
+      208,
+      1,
+      1386,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      3,
+      1,
+      226,
+      37
+    ],
+    [
+      0,
+      7,
+      55,
+      0,
+      32,
+      373
+    ]
+  ],
+  "classification_report": {
+    "Good": {
+      "precision": 0.73568281938326,
+      "recall": 0.6231343283582089,
+      "f1-score": 0.6747474747474748,
+      "support": 268.0
+    },
+    "Moderate": {
+      "precision": 0.8085808580858086,
+      "recall": 0.8323895809739524,
+      "f1-score": 0.8203125,
+      "support": 1766.0
+    },
+    "Poor": {
+      "precision": 0.7290836653386454,
+      "recall": 0.658273381294964,
+      "f1-score": 0.6918714555765595,
+      "support": 556.0
+    },
+    "Satisfactory": {
+      "precision": 0.8191489361702128,
+      "recall": 0.8425531914893617,
+      "f1-score": 0.8306862451303566,
+      "support": 1645.0
+    },
+    "Severe": {
+      "precision": 0.8659003831417624,
+      "recall": 0.8432835820895522,
+      "f1-score": 0.8544423440453687,
+      "support": 268.0
+    },
+    "Very Poor": {
+      "precision": 0.7936170212765957,
+      "recall": 0.7987152034261242,
+      "f1-score": 0.7961579509071505,
+      "support": 467.0
+    },
+    "accuracy": 0.8024144869215292,
+    "macro avg": {
+      "precision": 0.7920022805660475,
+      "recall": 0.7663915446053605,
+      "f1-score": 0.7780363284011517,
+      "support": 4970.0
+    },
+    "weighted avg": {
+      "precision": 0.8009391872275053,
+      "recall": 0.8024144869215292,
+      "f1-score": 0.8010985738531439,
+      "support": 4970.0
+    }
+  },
+  "top_features": [
+    {
+      "Feature": "PM2.5",
+      "Importance": 0.31756818334510856
+    },
+    {
+      "Feature": "PM10",
+      "Importance": 0.20751722617696775
+    },
+    {
+      "Feature": "CO",
+      "Importance": 0.1931431300671173
+    },
+    {
+      "Feature": "NO2",
+      "Importance": 0.09786453033045173
+    },
+    {
+      "Feature": "SO2",
+      "Importance": 0.09274114617476227
+    },
+    {
+      "Feature": "O3",
+      "Importance": 0.09116578390559243
+    }
+  ]
+}

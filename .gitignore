@@ -1,0 +1,56 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Large machine learning model binaries (exceeds GitHub file limits)
+*.pkl
+
+# C/C++ build artifacts (ESP32)
+.pio/
+.vscode/
+*.bin
+*.elf
+
+# Testing & coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environments
+.env
+.venv/
+venv/
+ENV/
+env/
+
+# Catboost temporary logs
+catboost_info/
+
+# Local databases and runtime state
+*.db
+*.db-journal
+*.sqlite3
+backend/smart_goggle.db
+
+# Live runtime prediction logs
+ml_results/live_predictions/live_predictions.jsonl
+
+# Flutter / Dart build artifacts
+flutter_app/.dart_tool/
+flutter_app/.flutter-plugins
+flutter_app/.flutter-plugins-dependencies
+flutter_app/.pub-cache/
+flutter_app/.pub/
+flutter_app/build/
+flutter_app/android/.gradle/
+flutter_app/android/local.properties
+flutter_app/ios/Pods/
+flutter_app/ios/.symlinks/
+flutter_app/ios/Flutter/Flutter.framework
+flutter_app/ios/Flutter/Flutter.podspec
+
+# OS Generated
+.DS_Store
+Thumbs.db
